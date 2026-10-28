@@ -32,4 +32,3 @@ chgrp bind db.$forward_name
 mv db.$forward_name /etc/bind/
 
 echo "Konfigurasi db.$forward_name telah berhasil dibuat."
-

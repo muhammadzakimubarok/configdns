@@ -6,5 +6,4 @@ apt install bind9 dnsutils bind9utils -y
 
 echo "========================="
 echo "Install DNS is complete."
-echo "=========================" 
-
+echo "========================="

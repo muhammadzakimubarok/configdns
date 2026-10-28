@@ -32,4 +32,3 @@ chgrp bind db.$reverse_name
 mv db.$reverse_name /etc/bind/
 
 echo "Konfigurasi db.$reverse_name telah berhasil dibuat."
-

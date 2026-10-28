@@ -4,11 +4,11 @@ echo "============================================"
 echo "Check Config DNS with bash"
 echo "============================================"
 
-#check config dns zones master 
+#check config dns zones master
 named-checkconf /etc/bind/named.conf.default-zones
 
 #check config forwarding dns
-named-checkconf /etc/bind/named.conf.options 
+named-checkconf /etc/bind/named.conf.options
 
 
 echo "============================================"
@@ -22,10 +22,10 @@ read -p "Masukan Nama File Domain:" filedomain
 read -p "Masukan Nama Zone Reverse:" reverse
 read -p "Masukan Nama File Reverse:" filereverse
 
-named-checkzone $domain /etc/bind/$filedomain
+named-checkzone $domain /etc/bind/db.$filedomain
 
-named-checkzone $reverse /etc/bind/$filereverse
+named-checkzone $reverse /etc/bind/db.$filereverse
 
 echo "========================="
 echo "Check Config DNS Zone is complete."
-echo "=========================" 
+echo "========================="
